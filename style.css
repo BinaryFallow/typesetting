@@ -1,129 +1,159 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0 auto;
-    min-width: 1000px;
-    max-width: 1400px;
-    font-family: 'Times New Roman', Times, serif, serif;
-    background-color: white;
-    color: black;
-    padding: 20px;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  section {
-    float: left;
-    width: 50%;
-  }
-  
-  aside {
-    float: left;
-  width: 25%;
-  }
-  
-  nav {
-    float: left;
-    width: 25%;
-    
-  }
-  
-  footer {
-    clear: both;
-  }
-  
-  header, section, aside, nav, footer {
-    padding: 20px;
-  }
-  
-  
-  header, footer {
-    border-top: 5px solid #b85f5f;
-    border-bottom: 5px solid #b85f5f;
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    padding-bottom: 10px;
-  }
-  
+  box-sizing: border-box;
+}
 
-  h2 {
-    font-weight: bold;
-    font-size: 24px;
-  }
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family: 'Times New Roman', Times, serif, serif;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+.container::after {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+width: 25%;
+}
+
+nav {
+  float: left;
+  width: 25%;
   
-  a {
-    color: #b85f5f;
-    text-decoration: underline;
-  }
-  
-  a:hover {
-    text-decoration: none;
-  }
-  
-  .nav-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  
-  .nav-button {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    border: 2px solid #b85f5f;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    background-color: white;
-  }
-  
-  .nav-button:hover {
-    background-color: #b85f5f;
-    color: white;
-    border-radius: 100px;
-  }
-  
-  .sidebar-box {
-    border: 2px solid #b85f5f;
-    padding: 15px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 18px;
-    background-color: white;
-    font-weight: bold;
-    border-radius: 100px;
-    width: 180px;
-    border-radius: 30px;
-    align-self: flex-end;
-  }
-  
-  .sidebar-box a {
-    text-decoration: none;
-    color: black;
-    display: block;
-  }
-  
-  .sidebar-box:hover {
-    background-color: #b85f5f;
-  }
-  
-  .sidebar-box:hover a {
-    color: white;
-  }
-  
-  
-  ul {
-    list-style-type: square;
-    padding-left: 20px;
-  }
-  
-  
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+
+header, footer {
+  border-top: 5px solid #b85f5f;
+  border-bottom: 5px solid #b85f5f;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+a {
+  color: #b85f5f;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.nav-button {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #b85f5f;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: white;
+}
+
+.nav-button:hover {
+  background-color: #b85f5f;
+  color: white;
+  border-radius: 100px;
+}
+
+.sidebar-box {
+  border: 2px solid #b85f5f;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 100px;
+  width: 180px;
+  border-radius: 30px;
+  align-self: flex-end;
+}
+
+.sidebar-box a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.sidebar-box:hover {
+  background-color: #b85f5f;
+}
+
+.sidebar-box:hover a {
+  color: white;
+}
+
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+nav ul li {
+  margin-bottom: 5px; 
+}
+
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  color: #b85f5f;
+  padding: 15px 50px;
+  border-radius: 20px;
+  font-size: 18px;
+  border-style: solid;
+
+}
+
+nav ul li a:hover {
+  background-color: #b85f5f;
+  color: white;
+  border-style: solid;
+}
+
+
+
