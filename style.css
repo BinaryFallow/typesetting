@@ -2,14 +2,46 @@
   box-sizing: border-box;
 }
 
+a {
+  color: #b85f5f;
+  text-decoration: underline;
+}
+
+a {
+  color: #b85f5f;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #660000;
+}
+
+a[href^="http"]:not([href*="st-huxley.edu"])::after {
+  content: url('external-link-52.png');
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-left: -9.5px;
+  vertical-align: middle;
+  transform: scale(0.25);
+  vertical-align: text-bottom;
+  position: relative;
+  top: -7px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
-  font-family: 'Times New Roman', Times, serif, serif;
+  font-family: 'Georgia', Georgia, serif, serif;
   background-color: white;
   color: black;
   padding: 20px;
+  
 }
 
 .container::after {
@@ -19,14 +51,13 @@ body {
   margin: 0 auto;
 }
 
-section {
-  float: left;
-  width: 50%;
-}
-
 aside {
   float: left;
 width: 25%;
+}
+
+p {
+  text-indent: 20px;
 }
 
 nav {
@@ -59,15 +90,6 @@ h2 {
   font-size: 24px;
 }
 
-a {
-  color: #b85f5f;
-  text-decoration: underline;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 .nav-buttons {
   display: flex;
   flex-direction: column;
@@ -92,40 +114,6 @@ a:hover {
   border-radius: 100px;
 }
 
-.sidebar-box {
-  border: 2px solid #b85f5f;
-  padding: 15px;
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 18px;
-  background-color: white;
-  font-weight: bold;
-  border-radius: 100px;
-  width: 180px;
-  border-radius: 30px;
-  align-self: flex-end;
-}
-
-.sidebar-box a {
-  text-decoration: none;
-  color: black;
-  display: block;
-}
-
-.sidebar-box:hover {
-  background-color: #b85f5f;
-}
-
-.sidebar-box:hover a {
-  color: white;
-}
-
-
-ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
 nav ul {
   list-style: none;
   padding: 0;
@@ -146,7 +134,12 @@ nav ul li a {
   border-radius: 20px;
   font-size: 18px;
   border-style: solid;
-
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav ul li a:hover {
@@ -155,5 +148,46 @@ nav ul li a:hover {
   border-style: solid;
 }
 
+ol {
+  list-style-type: lower-alpha;
+}
+
+.sidebar-box {
+  border: 2px solid #b85f5f;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 100px;
+  width: 180px;
+  border-radius: 30px;
+  align-self: flex-end;
+}
+
+section {
+  float: left;
+  width: 50%;
+}
+
+.sidebar-box a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.sidebar-box:hover {
+  background-color: #b85f5f;
+}
+
+.sidebar-box:hover a {
+  color: white;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
 
 
