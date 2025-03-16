@@ -185,6 +185,11 @@ section {
   color: white;
 }
 
+.button, .button a {
+  color: #b85f5f !important;
+  text-decoration: none;
+}
+
 ul {
   list-style-type: square;
   padding-left: 20px;
